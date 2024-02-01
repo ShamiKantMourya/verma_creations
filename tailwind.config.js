@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'mobile': '480px',
+        'mobile': '320px',
       },
       animation: {},
       keyframes: {
