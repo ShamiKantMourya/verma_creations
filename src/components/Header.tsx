@@ -7,6 +7,17 @@ import logo1 from "../assets/Verma Creations white.png";
 
 const Header = () => {
     const [click, setClick] = useState(false);
+    const [navbarColor, setNavbarColor] = useState(false);
+
+    const changeNavbarColor = () => {
+        if (window.scrollY >= 80) {
+            setNavbarColor(true)
+        } else {
+            setNavbarColor(false)
+        }
+    };
+
+    window.addEventListener('scroll', changeNavbarColor);
     const navBar = <>
         <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
             <ul className="text-center text-xl p-20">
@@ -18,10 +29,10 @@ const Header = () => {
         </div>
     </>
     return (
-        <nav className="bg-blue-600 h-20">
-            <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4">
+        <nav className={navbarColor ? "bg-transparent" : "bg-blue-600 h-20"}>
+            <div className="h-10vh flex lg:justify-between z-50 text-white py-5 lg:px-20 mobile:ml-8">
                 <div className="flex items-center flex-1">
-                    <img src={logo1} alt="logo" className="lg:w-16 mobile:w-12" />
+                    <img src={logo1} alt="logo" className="lg:w-16 cursor-pointer moblie:w-8 mobile:h-8" />
                 </div>
                 <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
                     <div className="flex-10">
@@ -39,7 +50,7 @@ const Header = () => {
                 <div>
                     {click && navBar}
                 </div>
-                <button className="block sm:hidden transition" onClick={() => setClick(!click)}>
+                <button className="block sm:hidden transition mobile:mr-8" onClick={() => setClick(!click)}>
                     {click ? <FaTimes /> : <CiMenuFries />}
                 </button>
             </div>
