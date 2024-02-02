@@ -47,14 +47,14 @@ const Footer = () => {
                         <MdOutlineMailOutline className="text-gray-300 mr-2"/>
                         <input type="text" placeholder="Email" className="my-5 border-none bg-transparent outline-none text-slate-100 w-full" />
                         </div>
-                        <GrSend className="text-pink-500 flex mr-9"/>
+                        <GrSend className="text-pink-500 flex mr-9 cursor-pointer"/>
                     </div>
                 </div>
                 <div className="flex text-slate-50 items-center mobile:ml-8 my-5">
-                    <IoLogoInstagram className="hover:text-red-500"/>
-                    <FaXTwitter className="mobile:mx-3"/>
-                    <FaFacebookF className="hover:text-blue-700"/>
-                    <MdLocationPin className="mobile:ml-3 hover:text-red-800"/>
+                    <IoLogoInstagram className="hover:text-red-500 cursor-pointer"/>
+                    <FaXTwitter className="mobile:mx-3 cursor-pointer"/>
+                    <FaFacebookF className="hover:text-blue-700 cursor-pointer"/>
+                    <MdLocationPin className="mobile:ml-3 hover:text-red-800 cursor-pointer"/>
                 </div>
             </div>
             <div className="flex justify-center items-center h-20 text-slate-50 mobile:text-xs bg-gray-900">
