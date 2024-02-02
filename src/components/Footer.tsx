@@ -18,41 +18,41 @@ const Footer = () => {
                         All rights reserved
                     </span>
                 </div>
-                <div>
+                <div className="mobile:ml-8">
                     <h2 className="text-slate-50">USEFUL LINKS</h2>
                     <div>
                         <ul>
-                            <p className="text-slate-50">Home</p>
-                            <p className="text-slate-50">Services</p>
-                            <p className="text-slate-50">Gallery</p>
-                            <p className="text-slate-50">About</p>
-                            <p className="text-slate-50">Contact Us</p>
+                            <p className="text-gray-500 hover:text-slate-200">Home</p>
+                            <p className="text-gray-500 hover:text-slate-200">Services</p>
+                            <p className="text-gray-500 hover:text-slate-200">Gallery</p>
+                            <p className="text-gray-500 hover:text-slate-200">About</p>
+                            <p className="text-gray-500 hover:text-slate-200">Contact Us</p>
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div className="mobile:ml-8">
                     <h2 className="text-slate-50">LEGAL</h2>
                     <div>
                         <ul>
-                            <p className="text-slate-50">Terms and Conditions</p>
-                            <p className="text-slate-50">Privacy Policy</p>
-                            <p className="text-slate-50">Terms of Sales</p>
+                            <p className="text-gray-500 hover:text-slate-200">Terms and Conditions</p>
+                            <p className="text-gray-500 hover:text-slate-200">Privacy Policy</p>
+                            <p className="text-gray-500 hover:text-slate-200">Terms of Sales</p>
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div className="mobile:ml-8">
                     <h2 className="text-slate-50">SUBSCRIBE</h2>
-                    <div className="flex">
-                        <MdOutlineMailOutline />
+                    <div className="flex items-center justify-start">
+                        <MdOutlineMailOutline className="text-gray-300"/>
                         <input type="text" placeholder="Email" />
-                        <GrSend />
+                        <GrSend className="text-pink-600"/>
                     </div>
                 </div>
-                <div className="flex">
-                    <IoLogoInstagram />
-                    <FaXTwitter />
-                    <FaFacebookF />
-                    <MdLocationPin />
+                <div className="flex text-slate-50 items-center mobile:ml-8">
+                    <IoLogoInstagram className="hover:text-red-500"/>
+                    <FaXTwitter className="mobile:mx-3"/>
+                    <FaFacebookF className="hover:text-blue-700"/>
+                    <MdLocationPin className="mobile:ml-3 hover:text-red-800"/>
                 </div>
             </div>
             <div className="flex justify-center items-center h-20 text-slate-50 mobile:text-xs bg-gray-900">
