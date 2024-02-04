@@ -2,7 +2,7 @@
 
 const Address = () => {
     return (
-        <div>
+        <div className="flex flex-col justify-center h-auto w-full">
             <h1>
                 WANT TO WORK WITH US
             </h1>
