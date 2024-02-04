@@ -8,10 +8,10 @@ function App() {
 
   return (
     <>
-    <Header />
+      <Header />
       {/* <ScrollBackToTop /> */}
       <Address />
-    <Footer />
+      <Footer />
     </>
   )
 }
