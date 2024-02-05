@@ -7,12 +7,12 @@ import Header from "@components/Header"
 function App() {
 
   return (
-    <>
-      <Header />
+    <div className="flex flex-col h-auto w-full bg-black">
+      {/* <Header /> */}
       {/* <ScrollBackToTop /> */}
       <Address />
       <Footer />
-    </>
+    </div>
   )
 }
 
