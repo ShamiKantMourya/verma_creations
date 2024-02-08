@@ -4,13 +4,14 @@ import Address from "@components/Address"
 import ContactForm from "@components/ContactForm"
 import Footer from "@components/Footer"
 import Header from "@components/Header"
+import ScrollBackToTop from "@components/ScrollBackToTop"
 
 function App() {
 
   return (
     <div className="flex flex-col">
       <Header />
-      {/* <ScrollBackToTop /> */}
+      <ScrollBackToTop />
       <ContactForm />
       <Address />
       <Footer />
