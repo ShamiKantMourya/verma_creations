@@ -1,16 +1,16 @@
-// import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
-import { useState } from "react";
 import logo1 from "../assets/Verma Creations white.png";
 
-const Header = () => {
-    const [click, setClick] = useState(false);
-    const [navbarColor, setNavbarColor] = useState(false);
+const Header: React.FC = () => {
+    const [click, setClick] = useState<Boolean>(false);
+    const [navbarColor, setNavbarColor] = useState<Boolean>(false);
 
     const changeNavbarColor = () => {
-        
+
         if (window.scrollY >= 80) {
             setNavbarColor(true)
         } else {
@@ -20,12 +20,12 @@ const Header = () => {
 
     window.addEventListener('scroll', changeNavbarColor);
     const navBar = <>
-        <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
-            <ul className="text-center text-xl p-20">
-                <h1 className="text-black my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Home</h1>
-                <h1 className="text-black">Services</h1>
-                <h1 className="text-black">Gallery</h1>
-                <h1 className="text-black">About</h1>
+        <div className="lg:hidden block absolute top-20 w-full left-0 right-0 bg-slate-900 transition">
+            <ul className="text-center text-xl p-20 flex flex-col">
+                <Link to = "/" className="text-slate-100 my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Home</Link>
+                <Link to = "/services" className="text-slate-100 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Services</Link>
+                <Link to = "/gallery" className="text-slate-100 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Gallery</Link>
+                <Link to = "/about" className="text-slate-100 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">About</Link>
             </ul>
         </div>
     </>
@@ -38,10 +38,10 @@ const Header = () => {
                 <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
                     <div className="flex-10">
                         <ul className="flex gap-8 mr-16 text-[18px]">
-                            <h1 className="text-black">Home</h1>
-                            <h1 className="text-black">Services</h1>
-                            <h1 className="text-black">Gallery</h1>
-                            <h1 className="text-black">About</h1>
+                            <Link to="/" className="text-black">Home</Link>
+                            <Link to="/services" className="text-black">Services</Link>
+                            <Link to="/gallery" className="text-black">Gallery</Link>
+                            <Link to="/about" className="text-black">About</Link>
                         </ul>
                     </div>
                 </div>
