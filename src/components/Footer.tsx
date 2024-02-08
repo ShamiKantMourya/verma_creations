@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import { MdOutlineMailOutline, MdLocationPin } from "react-icons/md";
 import { GrSend } from "react-icons/gr";
 import { IoLogoInstagram } from "react-icons/io5";
@@ -5,10 +7,10 @@ import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 
 import logo1 from "../assets/Verma Creations white.png";
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <footer>
-            <div className="flex flex-col mobile:h-auto bg-gray-950">
+            <div className="flex flex-col mobile:h-auto bg-gray-950 pt-5">
                 <div className="mobile:ml-8 mt-3">
                     <img src={logo1} alt="logo" className="cursor-pointer moblie:w-8 mobile:h-8 mb-2" />
                     <p className="flex text-slate-50 mobile:text-xs py-1">
@@ -22,7 +24,7 @@ const Footer = () => {
                     <h2 className="text-slate-50 my-4">USEFUL LINKS</h2>
                     <div>
                         <ul>
-                            <p className="text-gray-500 hover:text-slate-200">Home</p>
+                            <Link to="/" className="text-gray-500 hover:text-slate-200">Home</Link>
                             <p className="text-gray-500 hover:text-slate-200">Services</p>
                             <p className="text-gray-500 hover:text-slate-200">Gallery</p>
                             <p className="text-gray-500 hover:text-slate-200">About</p>
@@ -41,7 +43,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="mobile:ml-8">
-                    <h2 className="text-slate-50 mt-4 mb-2">SUBSCRIBE</h2>
+                    <h2 className="text-slate-50 mt-8 mb-4">SUBSCRIBE</h2>
                     <div className="flex items-center h-6 border-slate-100 border-b-2 mr-3 justify-between">
                         <div className="flex justify-center items-center w-full">
                         <MdOutlineMailOutline className="text-gray-300 mr-2"/>
@@ -50,7 +52,7 @@ const Footer = () => {
                         <GrSend className="text-pink-500 flex mr-9 cursor-pointer"/>
                     </div>
                 </div>
-                <div className="flex text-slate-50 items-center mobile:ml-8 my-5">
+                <div className="flex text-slate-50 items-center mobile:ml-8 my-8">
                     <IoLogoInstagram className="hover:text-red-500 cursor-pointer"/>
                     <FaXTwitter className="mobile:mx-3 cursor-pointer"/>
                     <FaFacebookF className="hover:text-blue-700 cursor-pointer"/>
