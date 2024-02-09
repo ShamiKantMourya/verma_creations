@@ -1,7 +1,7 @@
 
 const ContactForm = () => {
   return (
-    <div className="flex justify-center w-full h-auto mt-20 bg-gray-700">
+    <div className="flex justify-center w-full h-auto bg-gray-700">
       <div className="flex flex-col justify-evenly px-8 bg-black my-10">
         <p className="flex justify-center text-slate-100  font-bold text-xl mt-16">REACH OUT VIA THE FORM BELOW</p>
         <input type="text" placeholder="Full Name" className="bg-transparent mb-4 mt-8 text-slate-100 outline-none border-b-2"/>
