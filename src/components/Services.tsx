@@ -1,5 +1,9 @@
 import React from 'react';
 
+import Signage from "../assets/Signageboard.jpeg";
+import Wallpaper from "../assets/wallpaper.jpg";
+import Repair from "../assets/repair1.jpg";
+
 const Services: React.FC = () => {
   return (
     <div className='flex flex-col flex-wrap mt-20 h-auto justify-between bg-black'>
@@ -10,24 +14,18 @@ const Services: React.FC = () => {
         <h1>OUR SERVICES</h1>
       </div>
       <div>
-        <div>
-          <img src='' alt='Signage and Hoardings' />
-          <div>
-            <h1>Signage and Hoardings</h1>
-          </div>
-        </div>
-        <div>
-          <img src='' alt='Customize Wallpaper' />
-          <div>
-            <h1>Customize Wallpaper</h1>
-          </div>
-        </div>
-        <div>
-          <img src='' alt='Board Repair' />
-          <div>
-            <h1>Board Repair</h1>
-          </div>
-        </div>
+        <figure>
+          <img src={Signage} alt='Signage and Hoardings' />
+          <figcaption>Signage and Hoardings</figcaption>
+        </figure>
+        <figure>
+          <img src={Wallpaper} alt='Customize Wallpaper' />
+          <figcaption>Customize Wallpaper</figcaption>
+        </figure>
+        <figure>
+          <img src={Repair} alt='Board Repair' />
+          <figcaption>Board Repair</figcaption>
+        </figure>
       </div>
     </div>
   )
