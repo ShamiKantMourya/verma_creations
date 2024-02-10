@@ -8,23 +8,23 @@ const Services: React.FC = () => {
   return (
     <div className='flex flex-col flex-wrap mt-20 h-auto justify-between bg-black'>
       <div>
-        <h2>What We Do</h2>
+        <h2 className='text-slate-100 flex justify-center text-xl'>What We Do</h2>
       </div>
       <div>
-        <h1>OUR SERVICES</h1>
+        <p className='text-slate-100 flex justify-center font-semibold text-4xl'>OUR SERVICES</p>
       </div>
-      <div>
-        <figure>
-          <img src={Signage} alt='Signage and Hoardings' />
-          <figcaption>Signage and Hoardings</figcaption>
+      <div className='flex flex-wrap justify-evenly px-8'>
+        <figure className='border-2 border-white rounded-md mt-3'>
+          <img src={Signage} alt='Signage and Hoardings' className='p-2 rounded-lg' />
+          <figcaption className='text-slate-100'>Signage and Hoardings</figcaption>
         </figure>
-        <figure>
-          <img src={Wallpaper} alt='Customize Wallpaper' />
-          <figcaption>Customize Wallpaper</figcaption>
+        <figure className='border-2 border-white rounded-md my-3'>
+          <img src={Wallpaper} alt='Customize Wallpaper' className='p-2 rounded-lg' />
+          <figcaption className='text-slate-100'>Customize Wallpaper</figcaption>
         </figure>
-        <figure>
-          <img src={Repair} alt='Board Repair' />
-          <figcaption>Board Repair</figcaption>
+        <figure className='border-2 border-white rounded-md mb-3'>
+          <img src={Repair} alt='Board Repair' className='p-2 rounded-lg' />
+          <figcaption className='text-slate-100'>Board Repair</figcaption>
         </figure>
       </div>
     </div>
