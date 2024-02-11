@@ -11,7 +11,7 @@ const Services: React.FC = () => {
         <h2 className='text-slate-100 flex justify-center text-xl'>What We Do</h2>
       </div>
       <div>
-        <p className='text-slate-100 flex justify-center font-semibold text-4xl'>OUR SERVICES</p>
+        <p className='bg-gradient-to-r from-cyan-500 to-red-500 bg-clip-text text-transparent flex justify-center font-bold text-4xl'>OUR SERVICES</p>
       </div>
       <div className='flex flex-wrap justify-evenly px-8'>
         <figure className='border-2 border-white rounded-md mt-3 w-auto h-96'>
