@@ -1,6 +1,6 @@
 import React from "react";
 
-import Homepage from "@components/Homepage/Homepage";
+import Homepage from "./Pages/Homepge/Homepage";
 
 const App: React.FC = () => {
 
