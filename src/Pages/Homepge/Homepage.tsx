@@ -6,7 +6,7 @@ import Address from '@components/Address';
 import ContactForm from '@components/ContactForm';
 import ScrollBackToTop from '@components/ScrollBackToTop';
 import Services from '@components/Services';
-import Slider from '@components/Slider';
+import Slider from '@components/Slider/Slider';
 
 const Homepage: React.FC = () => {
     return (
