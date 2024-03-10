@@ -3,8 +3,8 @@ import React from 'react';
 import { ImageSliderProps } from "../../Utils/imageSlider";
 
 interface DotProps {
-  activeIndex: Number;
-  onClick: (id: Number | String) => void;
+  activeIndex: number;
+  onClick: (id: number) => void;
   sliderData: ImageSliderProps[];
 }
 
