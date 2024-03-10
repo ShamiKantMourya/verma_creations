@@ -4,11 +4,11 @@ import Img3 from "../assets/repair1.jpg";
 import Img4 from "../assets/pexels-san-engineer-1935370.jpg";
 
 export interface ImageSliderProps {
-  id: Number | String;
-  alt: String;
-  title: String;
-  description: String;
-  urls: String;
+  id: number;
+  alt: string;
+  title: string;
+  description: string;
+  urls: string;
 }
 
 export const sliderData: ImageSliderProps[] = [
