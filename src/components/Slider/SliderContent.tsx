@@ -1,7 +1,7 @@
 import React from 'react';
-import {ImageSliderProps} from "../../Utils/imageSlider";
-// import Dots from './Dots';
 
+import {ImageSliderProps} from "../../Utils/imageSlider";
+import "./slider.css";
 interface SliderProps {
   activeIndex: Number;
   sliderData: ImageSliderProps[];
