@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         </div>
     </>
     return (
-        <nav className={navbarColor ? "bg-blue-600 h-20 fixed w-full" : "bg-red-500 h-20 fixed w-full"}>
+        <nav className={navbarColor ? "bg-blue-600 h-20 fixed w-full z-10" : "bg-red-500 h-20 fixed w-full z-10"}>
             <div className="h-10vh flex lg:justify-between z-50 text-white py-5 lg:px-20 mobile:ml-8">
                 <div className="flex items-center flex-1">
                     <img src={logo1} alt="logo" className="lg:w-16 cursor-pointer moblie:w-8 mobile:h-8" />
