@@ -6,7 +6,7 @@ import Repair from "../assets/repair1.jpg";
 
 const Services: React.FC = () => {
   return (
-    <div className='flex flex-col flex-wrap mt-20 h-auto justify-between bg-black'>
+    <div className='flex flex-col flex-wrap mt-10 h-auto justify-between'>
       <div>
         <h2 className='text-slate-100 flex justify-center text-xl my-5'>What We Do</h2>
       </div>

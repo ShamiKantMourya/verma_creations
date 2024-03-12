@@ -2,7 +2,7 @@
 
 const Address = () => {
     return (
-        <div className="flex flex-col justify-center h-auto w-full px-12 pb-12 bg-black">
+        <div className="flex flex-col justify-center h-auto w-full px-12 pb-12">
             <h1 className="flex justify-center text-slate-100 text-3xl text-center font-bold py-12 bg-gradient-to-r from-cyan-500 to-red-500 bg-clip-text text-transparent">
                 WANT TO WORK WITH US
             </h1>
