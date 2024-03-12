@@ -10,10 +10,12 @@ import Slider from '@components/Slider/Slider';
 
 const Homepage: React.FC = () => {
     return (
-        <div>
+        <div className='bg-black'>
             <Header />
             <ScrollBackToTop />
+            <div className='mt-20 w-screen z-[-1]'>
             <Slider />
+            </div>
             <Services />
             <ContactForm />
             <Address />
