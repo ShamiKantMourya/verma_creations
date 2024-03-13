@@ -8,6 +8,8 @@ const Slider: React.FC = () => {
         <div>
             <Carousel
                 sliderData={sliderData}
+                autoSlide = {true}
+                autoSlideInterval={2000}
             />
         </div>
     )
