@@ -22,7 +22,7 @@ const Carousel: React.FC<CarouselProps> = ({ sliderData, autoSlide, autoSlideInt
         return () => clearInterval(slideInterval)
     }, []);
     return (
-        <div className='lg:h-screen z-10'>
+        <div className='lg:h-screen'>
             <div className='h-80 w-full overflow-hidden relative lg:h-full'>
                 {
                     sliderData.map((data) => (
@@ -37,7 +37,7 @@ const Carousel: React.FC<CarouselProps> = ({ sliderData, autoSlide, autoSlideInt
                     ))
                 }
             </div>
-            <div className='absolute inset-0 flex items-center justify-between p-2 h-80 lg:h-screen mobile:mt-20 mobile:z-20'>
+            <div className='absolute inset-0 flex items-center justify-between p-2 h-80 lg:h-screen mobile:mt-20'>
                 <button onClick={prev} className='text-white'>
                     <ChevronLeft size={40} />
                 </button>
