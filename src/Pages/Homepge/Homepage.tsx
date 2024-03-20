@@ -6,7 +6,7 @@ import Address from '@components/Address';
 import ContactForm from '@components/ContactForm';
 import ScrollBackToTop from '@components/ScrollBackToTop';
 import Services from '@components/Services';
-import Slider from '@components/Slider/Slider';
+import ImageSlider from '@components/Slider/ImageSlider';
 
 const Homepage: React.FC = () => {
     return (
@@ -14,7 +14,7 @@ const Homepage: React.FC = () => {
             <Header />
             <ScrollBackToTop />
             <div className='z-[-1]'>
-            <Slider />
+                <ImageSlider />
             </div>
             <Services />
             <ContactForm />
