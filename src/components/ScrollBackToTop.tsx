@@ -18,7 +18,7 @@ const ScrollBackToTop = () => {
   }
   window.addEventListener("scroll", showScrollbar);
   return (
-    <div className="flex fixed bottom-8 right-8">
+    <div className="flex fixed bottom-8 right-8 z-20">
       {
         showScroll ? (
           <div className="flex h-12 w-12 bg-red-600 text-white justify-center items-center rounded-3xl" onClick={goToTop}>
