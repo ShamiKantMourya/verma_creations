@@ -1,7 +1,9 @@
 import Img1 from "../../assets/Signageboard.jpeg";
 import Img2 from "../../assets/pexels-san-engineer-1935370.jpg";
-import Img3 from "../../assets/wallpaper.jpg";
+// import Img3 from "../../assets/wallpaper.jpg";
 import Img4 from "../../assets/repair1.jpg";
+import Img5 from "../../assets/repairwork.jpg";
+import Img6 from "../../assets/wallpaper1.jpeg";
 
 export interface ImageSliderProps {
   id: number;
@@ -31,20 +33,20 @@ export const sliderData: ImageSliderProps[] = [
     alt: 'Wallpaper',
     title: "Wallpaper Works",
     description: "Contact us for customised 2D and 3D wallpapers",
-    urls: Img3,
+    urls: Img6,
   },
   {
     id: 3,
     alt: "Repair Work",
     title: "Repair Works",
     description: "Contact us if you have repair works for your signage boards",
-    urls: Img4,
+    urls: Img5,
   },
 ];
 
 export const images = [
   Img1,
   Img2,
-  Img3,
+  Img6,
   Img4
 ]
