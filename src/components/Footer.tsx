@@ -10,7 +10,7 @@ import logo1 from "../assets/Verma Creations white.png";
 const Footer: React.FC = () => {
     return (
         <footer>
-            <div className="flex flex-col mobile:h-auto bg-gray-950 pt-5">
+            <div className="flex mobile:h-auto bg-gray-950 pt-5 justify-around lg:h-96 lg:flex-row mobile:flex-col">
                 <div className="mobile:ml-8 mt-3">
                     <img src={logo1} alt="logo" className="cursor-pointer moblie:w-8 mobile:h-8 mb-2" />
                     <p className="flex text-slate-50 mobile:text-xs py-1">
@@ -42,21 +42,23 @@ const Footer: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="mobile:ml-8">
-                    <h2 className="text-slate-50 mt-8 mb-4">SUBSCRIBE</h2>
-                    <div className="flex items-center h-6 border-slate-100 border-b-2 mr-3 justify-between">
-                        <div className="flex justify-center items-center w-full">
-                        <MdOutlineMailOutline className="text-gray-300 mr-2"/>
-                        <input type="text" placeholder="Email" className="my-5 border-none bg-transparent outline-none text-slate-100 w-full" />
+                <div className="flex flex-col ">
+                    <div className="mobile:ml-8">
+                        <h2 className="text-slate-50 mb-4 mobile:mt-8">SUBSCRIBE</h2>
+                        <div className="flex items-center h-6 border-slate-100 border-b-2 mr-3 justify-between">
+                            <div className="flex justify-center items-center w-full">
+                                <MdOutlineMailOutline className="text-gray-300 mr-2" />
+                                <input type="text" placeholder="Email" className="my-5 border-none bg-transparent outline-none text-slate-100 w-full" />
+                            </div>
+                            <GrSend className="text-pink-500 flex mr-9 cursor-pointer" />
                         </div>
-                        <GrSend className="text-pink-500 flex mr-9 cursor-pointer"/>
                     </div>
-                </div>
-                <div className="flex text-slate-50 items-center mobile:ml-8 my-8">
-                    <IoLogoInstagram className="hover:text-red-500 cursor-pointer"/>
-                    <FaXTwitter className="mobile:mx-3 cursor-pointer"/>
-                    <FaFacebookF className="hover:text-blue-700 cursor-pointer"/>
-                    <MdLocationPin className="mobile:ml-3 hover:text-red-800 cursor-pointer"/>
+                    <div className="flex text-slate-50 items-center mobile:ml-8 my-8">
+                        <IoLogoInstagram className="hover:text-red-500 cursor-pointer" />
+                        <FaXTwitter className="mobile:mx-3 cursor-pointer" />
+                        <FaFacebookF className="hover:text-blue-700 cursor-pointer" />
+                        <MdLocationPin className="mobile:ml-3 hover:text-red-800 cursor-pointer" />
+                    </div>
                 </div>
             </div>
             <div className="flex justify-center items-center h-20 text-slate-50 mobile:text-xs bg-gray-900">
