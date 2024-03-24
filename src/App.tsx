@@ -1,12 +1,21 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
 
-import Homepage from "./Pages/Homepge/Homepage";
+const Homepage = lazy(() => import("./Pages/Homepge/Homepage"));
+const Gallery = lazy(() => import("./Pages/Gallery/Gallery"));
 
 const App: React.FC = () => {
 
   return (
-    <div className="flex flex-col">
-      <Homepage />
+    <div>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/gallery" element={
+          <Suspense fallback={<div>COmponent is still loading..</div>}>
+            <Gallery />
+          </Suspense>
+        } />
+      </Routes>
     </div>
   )
 }
