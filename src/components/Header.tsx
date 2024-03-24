@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
@@ -7,7 +7,21 @@ import logo1 from "../assets/Verma Creations white.png";
 
 const Header: React.FC = () => {
     const [click, setClick] = useState<Boolean>(false);
-    const [navbarColor, setNavbarColor] = useState<Boolean>(false);
+    const [navbarColor, setNavbarColor] = useState<boolean>(false);
+    const [location, setLocation] = useState({ latitude: 0, longitude: 0 });
+
+    useEffect(() => {
+        fetch('https://ipapi.co/json/')
+            .then(function (response) {
+                response.json().then(data => {
+                    console.log(data)
+                    setLocation((prev) => ({ ...prev, latitude: data.latitude, longitude: data.longitude }));
+                });
+            })
+            .catch(function (error) {
+                console.log(error)
+            });
+    }, []);
 
     const changeNavbarColor = () => {
 
@@ -22,10 +36,10 @@ const Header: React.FC = () => {
     const navBar = <>
         <div className="lg:hidden block absolute top-20 w-full left-0 right-0 bg-slate-900 transition">
             <ul className="text-center text-xl p-20 flex flex-col">
-                <Link to = "/" className="text-slate-100 my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Home</Link>
-                <Link to = "/services" className="text-slate-100 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Services</Link>
-                <Link to = "/gallery" className="text-slate-100 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Gallery</Link>
-                <Link to = "/about" className="text-slate-100 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">About</Link>
+                <Link to="/" className="text-slate-100 my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Home</Link>
+                <Link to="/services" className="text-slate-100 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Services</Link>
+                <Link to="/gallery" className="text-slate-100 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Gallery</Link>
+                <Link to="/about" className="text-slate-100 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">About</Link>
             </ul>
         </div>
     </>
