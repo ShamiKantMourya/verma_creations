@@ -1,7 +1,7 @@
-"use client";
-import { cn } from "../../Utils/cn";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
+
+import { cn } from "../../Utils/cn";
 
 export const Carousel = ({
   images,
