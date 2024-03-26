@@ -23,12 +23,12 @@ const Footer: React.FC = () => {
                 <div className="mobile:ml-8">
                     <h2 className="text-slate-50 my-4">USEFUL LINKS</h2>
                     <div>
-                        <ul>
+                        <ul className="flex flex-col">
                             <Link to="/" className="text-gray-500 hover:text-slate-200">Home</Link>
-                            <p className="text-gray-500 hover:text-slate-200">Services</p>
-                            <p className="text-gray-500 hover:text-slate-200">Gallery</p>
-                            <p className="text-gray-500 hover:text-slate-200">About</p>
-                            <p className="text-gray-500 hover:text-slate-200">Contact Us</p>
+                            <Link to="/services" className="text-gray-500 hover:text-slate-200">Services</Link>
+                            <Link to="/gallery" className="text-gray-500 hover:text-slate-200">Gallery</Link>
+                            <Link to="/about" className="text-gray-500 hover:text-slate-200">About</Link>
+                            <Link to="contact" className="text-gray-500 hover:text-slate-200">Contact Us</Link>
                         </ul>
                     </div>
                 </div>
