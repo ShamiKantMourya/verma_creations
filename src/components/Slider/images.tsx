@@ -1,5 +1,6 @@
 import Img1 from "../../assets/Signageboard.jpeg";
 import Img2 from "../../assets/pexels-san-engineer-1935370.jpg";
+import Img3 from "../../assets/wallpaper.jpg";
 import Img4 from "../../assets/repair1.jpg";
 import Img5 from "../../assets/repairwork.jpg";
 import Img6 from "../../assets/wallpaper1.jpeg";
@@ -12,11 +13,31 @@ export interface ImageSliderProps {
   urls: string;
 };
 interface ContentProps {
-  title:string;
-  description:string;
+  title: string;
+  description: string;
   content: JSX.Element;
 }
 
+export interface GalleryProps {
+  id: number;
+  content: JSX.Element | React.ReactNode | string;
+  className: string;
+  thumbnail: string;
+}
+
+export const images = [
+  Img1,
+  Img2,
+  Img6,
+  Img4
+];
+
+export const image = {
+  img1: Img1,
+  img2: Img2,
+  img3: Img3,
+  img4: Img4
+}
 
 export const sliderData: ImageSliderProps[] = [
   {
@@ -49,66 +70,134 @@ export const sliderData: ImageSliderProps[] = [
   },
 ];
 
-export const images = [
-  Img1,
-  Img2,
-  Img6,
-  Img4
-];
-
-export const image = {
-  img1: Img1,
-  img2:Img2,
-  img3:"hjkvhkjvcbvcn",
-  img4: "jgkjdgvfdjvzjv",
-  img5:"gklfhgsfkghfslk",
-  img6:"hdkj,fjdbjvbv"
-}
 
 export const content: ContentProps[] = [
   {
-      title: "Collaborative Editing",
-      description:
-          "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-      content:
-          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-              Collaborative Editing
-          </div>
+    title: "Signage Board Manufacturer",
+    description:
+      "From eye-catching boards to towering hoardings, we specialize in transforming your brand's vision into stunning visual displays. With a dedication to quality craftsmanship and innovative design, we ensure your message stands out amidst crowd. Let us amplify your presence and leave a lasting impression on your audience.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <img src={image.img1} alt='signage' loading='lazy' className='h-full w-full' />
+      </div>
+    )
   },
   {
-      title: "Real time changes",
-      description:
-          "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-      content:
-          <div className="h-full w-full  flex items-center justify-center text-white">
-              <img src={image.img1} alt='signage' loading='lazy' className='h-full w-full' />
-          </div>
+    title: "Neon Texts",
+    description:
+      "We specialize in crafting vibrant neon texts and symbols that illuminate your brand's identity. Our team combines creativity and precision to bring your vision to life, making your business shine bright in any setting. We tailor each neon creation to suit your unique style and message. Let us light up your brand's presence today! ",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <img src={image.img2} alt='Neon texts' loading='lazy' className='h-full w-full' />
+      </div>
+    )
   },
   {
-      title: "Version control",
-      description:
-          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      content:
-          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-              Version control
-          </div>
+    title: "Customize Wallpapers",
+    description:
+      "We specialize in crafting personalized 2D and 3D wallpapers tailored to your unique style and vision. Whether you're looking for vibrant patterns to immersive textures or to make a bold statement, our team helps your imaginations to meet reality. Discover the perfect blend of design and destination with our personalized wallpaper solutions.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <img src={image.img3} alt='Customize Wallpaper' loading='lazy' className='h-full w-full' />
+      </div>
+    )
   },
   {
-      title: "Running out of content",
-      description:
-          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      content:
-          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-              Running out of content
-          </div>
+    title: "Repair Works",
+    description:
+      "We specialize in fixing and upgrading signage boardsand hoardings to keep your business shining bright. Our dedicated team ensures quick, reliable repairs, maximizing visiblity for your brand. With our expertise, your signage will always make a powerful impression, attracting more customers to your doorstep. Trust us to illuminate your business success!",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <img src={image.img4} alt='Repair Works' loading='lazy' className='h-full w-full' />
+      </div>
+    )
   },
   {
-      title: "Contact Us",
-      description:
-          "Contact us if you want us to build such amazing signage boards, customize wallpapers and flex for your company",
-      content:
-          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-              Thank you for visiting our company.
-          </div>
+    title: "Contact Us",
+    description:
+      "Contact us if you want us to build such amazing signage boards, customize wallpapers and hoardings and signage repair works for your company.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        Thank Your Visting our Company Site...
+      </div>
+    )
   },
 ];
+
+export const GalleryCards: GalleryProps[] = [
+  {
+    id:1,
+    content:(
+      <div>
+        <p className="font-bold text-4xl text-white">House in the woods</p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          A serene and tranquil retreat, this house in the woods offers a peaceful
+          escape from the hustle and bustle of city life.
+        </p>
+      </div>
+    ),
+    className:"md:col-span-2",
+    thumbnail: Img1
+  },
+  {
+    id:2,
+    content:(
+      <div>
+        <p className="font-bold text-4xl text-white">House in the woods</p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          A serene and tranquil retreat, this house in the woods offers a peaceful
+          escape from the hustle and bustle of city life.
+        </p>
+      </div>
+    ),
+    className:"md:col-span-2",
+    thumbnail: Img1
+  },
+  {
+    id:3,
+    content:(
+      <div>
+        <p className="font-bold text-4xl text-white">House in the woods</p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          A serene and tranquil retreat, this house in the woods offers a peaceful
+          escape from the hustle and bustle of city life.
+        </p>
+      </div>
+    ),
+    className:"md:col-span-2",
+    thumbnail: Img1
+  },
+  {
+    id:4,
+    content:(
+      <div>
+        <p className="font-bold text-4xl text-white">House in the woods</p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          A serene and tranquil retreat, this house in the woods offers a peaceful
+          escape from the hustle and bustle of city life.
+        </p>
+      </div>
+    ),
+    className:"md:col-span-2",
+    thumbnail: Img1
+  },
+  {
+    id:5,
+    content:(
+      <div>
+        <p className="font-bold text-4xl text-white">House in the woods</p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          A serene and tranquil retreat, this house in the woods offers a peaceful
+          escape from the hustle and bustle of city life.
+        </p>
+      </div>
+    ),
+    className:"md:col-span-2",
+    thumbnail: Img1
+  }
+]
