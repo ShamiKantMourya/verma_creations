@@ -7,12 +7,12 @@ import Footer from '@components/Footer';
 
 const Gallery: React.FC = () => {
   return (
-    <>
+    <div className='flex flex-col bg-black'>
       <Header />
       <ScrollBackToTop />
       <GalleryLayout />
       <Footer />
-    </>
+    </div>
   )
 };
 
