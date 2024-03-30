@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 const Homepage = lazy(() => import("./Pages/Homepge/Homepage"));
 const Gallery = lazy(() => import("./Pages/Gallery/Gallery"));
 const Service = lazy(() => import("./Pages/Services/Service"));
+const About = lazy(() => (import("./Pages/About/About")));
 
 const App: React.FC = () => {
 
@@ -17,7 +18,14 @@ const App: React.FC = () => {
           </Suspense>
         } />
         <Route path="/gallery" element={
-          <Suspense fallback={<div>Component is still loading..</div>}><Gallery /></Suspense>
+          <Suspense fallback={<div>Component is still loading..</div>}>
+            <Gallery />
+          </Suspense>
+        } />
+        <Route path="/about" element={
+          <Suspense fallback={<div>Component is still loading..</div>}>
+            <About />
+          </Suspense>
         } />
       </Routes>
     </div>
