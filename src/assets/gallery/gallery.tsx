@@ -15,69 +15,91 @@ import Shipping from "./shipping.jpeg";
 import CashForGold from "./CashForGold.jpeg";
 import BarbequeNation from "./BarbequeNation.jpeg";
 
-export const Images = [
-{
-    route: "/src/assets/gallery/Oryn.jpeg",
-    imgSrc: Oryn
-},
-{
-    route: "/src/assets/gallery/Animo.jpeg",
-    imgSrc: Animo
-},
-{
-    route: "/src/assets/gallery/21Shot.jpeg",
-    imgSrc: Shot
-},
-{
-    route: "/src/assets/gallery/BarbequeNation.jpeg",
-    imgSrc: BarbequeNation
-},
-{
-    route: "/src/assets/gallery/CashForGold.jpeg",
-    imgSrc: CashForGold
-},
-{
-    route: "/src/assets/gallery/shipping.jpeg",
-    imgSrc: Shipping
-},
-{
-    route: "/src/assets/gallery/devOpticals.jpeg",
-    imgSrc: DevOpticals
-},
-{
-    route: "/src/assets/gallery/FitFushion.jpeg",
-    imgSrc: FitFusion
-},
-{
-    route: "/src/assets/gallery/swadeshi.jpeg",
-    imgSrc: Swadeshi
-},
-{
-    route: "/src/assets/gallery/3DWallpaper.jpeg",
-    imgSrc: Wallpaper
-},
-{
-    route: "/src/assets/gallery/Vanguard.jpeg",
-    imgSrc: Vanguard
-},
-{
-    route: "/src/assets/gallery/wallpaper.jpeg",
-    imgSrc: Wallpaper2D
-},
-{
-    route: "/src/assets/gallery/NitaraJewels.jpeg",
-    imgSrc: Nitra
-},
-{
-    route: "/src/assets/gallery/MrChef.jpeg",
-    imgSrc: Mrchef
-},
-{
-    route: "/src/assets/gallery/Monk.jpeg",
-    imgSrc: Monk
-},
-{
-    route: "/src/assets/gallery/H2Rmusic.jpeg",
-    imgSrc: H2R
-},
+interface ImagesProps {
+    route: string;
+    imgSrc: string;
+    alt: string
+}
+
+export const Images: ImagesProps[] = [
+    {
+        route: "/src/assets/gallery/Oryn.jpeg",
+        imgSrc: Oryn,
+        alt: "Oryn"
+    },
+    {
+        route: "/src/assets/gallery/Animo.jpeg",
+        imgSrc: Animo,
+        alt: "Animo"
+    },
+    {
+        route: "/src/assets/gallery/21Shot.jpeg",
+        imgSrc: Shot,
+        alt: "21Shot"
+    },
+    {
+        route: "/src/assets/gallery/BarbequeNation.jpeg",
+        imgSrc: BarbequeNation,
+        alt: "Barbeque Nation"
+    },
+    {
+        route: "/src/assets/gallery/CashForGold.jpeg",
+        imgSrc: CashForGold,
+        alt: "Cash For Cold"
+    },
+    {
+        route: "/src/assets/gallery/shipping.jpeg",
+        imgSrc: Shipping,
+        alt: "Shipping Company"
+    },
+    {
+        route: "/src/assets/gallery/devOpticals.jpeg",
+        imgSrc: DevOpticals,
+        alt: "Dev Opticals"
+    },
+    {
+        route: "/src/assets/gallery/FitFushion.jpeg",
+        imgSrc: FitFusion,
+        alt: "Fit Fusion Gym"
+    },
+    {
+        route: "/src/assets/gallery/swadeshi.jpeg",
+        imgSrc: Swadeshi,
+        alt: "Swadeshi"
+    },
+    {
+        route: "/src/assets/gallery/3DWallpaper.jpeg",
+        imgSrc: Wallpaper,
+        alt: "3D Wallpaper"
+    },
+    {
+        route: "/src/assets/gallery/Vanguard.jpeg",
+        imgSrc: Vanguard,
+        alt: "Vanguard Diagnostics"
+    },
+    {
+        route: "/src/assets/gallery/wallpaper.jpeg",
+        imgSrc: Wallpaper2D,
+        alt: "2D Wallpaper"
+    },
+    {
+        route: "/src/assets/gallery/NitaraJewels.jpeg",
+        imgSrc: Nitra,
+        alt: "Nitara Jewels"
+    },
+    {
+        route: "/src/assets/gallery/MrChef.jpeg",
+        imgSrc: Mrchef,
+        alt: "Mr Chef"
+    },
+    {
+        route: "/src/assets/gallery/Monk.jpeg",
+        imgSrc: Monk,
+        alt: "Monk"
+    },
+    {
+        route: "/src/assets/gallery/H2Rmusic.jpeg",
+        imgSrc: H2R,
+        alt: "H2R Music"
+    },
 ]
