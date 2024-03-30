@@ -20,6 +20,9 @@ export default {
       screens: {
         'mobile': '320px',
       },
+      colors: {
+        "matte-black": "#171717"
+      },
       animation: {},
       keyframes: {},
       boxShadow: {
