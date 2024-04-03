@@ -15,7 +15,7 @@ const ContactForm = () => {
         <h2 className="font-bold text-xl text-neutral-200">
           REACH OUT VIA THE FORM BELOW
         </h2>
-        <form className="my-8" onSubmit={handleSubmit}>
+        <form className="my-8" onSubmit={handleSubmit} method="POST">
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
             <LabelInputContainer>
               <Label htmlFor="firstname">First name</Label>
