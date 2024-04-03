@@ -8,19 +8,16 @@ import logo1 from "../assets/Verma Creations white.png";
 const Header: React.FC = () => {
     const [click, setClick] = useState<Boolean>(false);
     const [navbarColor, setNavbarColor] = useState<boolean>(false);
-    const [location, setLocation] = useState({ latitude: 0, longitude: 0 });
+    const [location, setLocation] = useState("");
 
     useEffect(() => {
-        fetch('https://ipapi.co/json/')
-            .then(function (response) {
-                response.json().then(data => {
-                    console.log(data)
-                    setLocation((prev) => ({ ...prev, latitude: data.latitude, longitude: data.longitude }));
-                });
-            })
-            .catch(function (error) {
-                console.log(error)
-            });
+        let latitude;
+        let longitude;
+        navigator.geolocation.getCurrentPosition((position) => {
+            latitude = position.coords.latitude;
+            longitude = position.coords.longitude;
+        });
+        
     }, []);
 
     const changeNavbarColor = () => {
