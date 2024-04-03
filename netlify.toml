@@ -1,7 +1,3 @@
-[build]
-  commandOrigin: ui
-  publish: /opt/build/repo/path-to-react-app/build
-  publishOrigin: config
 [[redirects]]
   from = "/*"
   to = "/index.html"
