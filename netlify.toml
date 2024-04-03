@@ -1,5 +1,5 @@
 [build]
-  command: CI= npm run build
+  command: "CI= npm run build"
   commandOrigin: ui
   publish: /opt/build/repo/path-to-react-app/build
   publishOrigin: config
