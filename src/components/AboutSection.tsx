@@ -5,13 +5,16 @@ import { cn } from "../Utils/cn";
 
 interface AboutProps {
     words: string;
+    heading: string;
     className?: string;
 };
 
-const AboutSection: React.FC<AboutProps> = ({ words, className }) => {
+const AboutSection: React.FC<AboutProps> = ({ words,heading,className }) => {
 
     const [scope, animate] = useAnimate();
     let wordsArray = words.split(" ");
+    let headingArray = heading.split(" ");
+
     useEffect(() => {
         animate(
             "span",
@@ -45,10 +48,7 @@ const AboutSection: React.FC<AboutProps> = ({ words, className }) => {
             <h1 className='text-white font-bold text-3xl flex justify-center'>About Us</h1>
             <div>
                 <div className={cn(className)}>
-                    <div className='text-white'>
-                        <h3 className=''>Welcome to Verma Creations, your premier destination for top-quality signage boards, customized wallpaper, flex printing, hoardings, and mesmerizing neon texts and logos. At Verma Creations, we blend innovation with craftsmanship to bring your vision to life, enhancing your brand identity and leaving a lasting impression.
-
-                            With years of experience in the industry, Verma Creations has established itself as atrusted name synonymous with excellence. Our team of skilled artisans and designers arepassionate about delivering stunning creations that exceed expectations.</h3>
+                    <div>
                         <h2 className='text-white font-bold text-xl py-2'>Why Choose Verma Creations?</h2>
                         <ul className='text-white'>
                             <li><span className='font-bold text-md'>Unparalleled Creativity:</span>We understand the power of visual communication. Our creative experts employ cutting-edge techniques to craft signage boards, wallpapers, flex prints, hoardings, and neon creations that captivate your audience.</li>
