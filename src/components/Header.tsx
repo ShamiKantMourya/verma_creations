@@ -8,17 +8,17 @@ import logo1 from "../assets/Verma Creations white.png";
 const Header: React.FC = () => {
     const [click, setClick] = useState<Boolean>(false);
     const [navbarColor, setNavbarColor] = useState<boolean>(false);
-    const [location, setLocation] = useState("");
+    // const [location, setLocation] = useState("");
 
-    useEffect(() => {
-        let latitude;
-        let longitude;
-        navigator.geolocation.getCurrentPosition((position) => {
-            latitude = position.coords.latitude;
-            longitude = position.coords.longitude;
-        });
+    // useEffect(() => {
+    //     let latitude;
+    //     let longitude;
+    //     navigator.geolocation.getCurrentPosition((position) => {
+    //         latitude = position.coords.latitude;
+    //         longitude = position.coords.longitude;
+    //     });
         
-    }, []);
+    // }, []);
 
     const changeNavbarColor = () => {
 
