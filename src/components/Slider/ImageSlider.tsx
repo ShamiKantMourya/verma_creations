@@ -1,10 +1,10 @@
-"use client";
 import { motion } from "framer-motion";
+// import {Link} from "react-scroll";
 
 import { Carousel } from "./image-slider";
 import { images } from "./images";
 
-function ImageSlider() {
+const ImageSlider = () => {
     return (
         <Carousel className="lg:h-[40rem] mobile:h-[20rem]" images={images}>
             <motion.div
