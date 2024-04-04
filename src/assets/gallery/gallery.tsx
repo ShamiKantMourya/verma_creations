@@ -23,82 +23,82 @@ interface ImagesProps {
 
 export const Images: ImagesProps[] = [
     {
-        route: "/src/assets/gallery/Oryn.jpeg",
+        route: "/Oryn.jpeg?url",
         imgSrc: Oryn,
         alt: "Oryn"
     },
     {
-        route: "/src/assets/gallery/Animo.jpeg",
+        route: "/Animo.jpeg?url",
         imgSrc: Animo,
         alt: "Animo"
     },
     {
-        route: "/src/assets/gallery/21Shot.jpeg",
+        route: "/21Shot.jpeg?url",
         imgSrc: Shot,
         alt: "21Shot"
     },
     {
-        route: "/src/assets/gallery/BarbequeNation.jpeg",
+        route: "/BarbequeNation.jpeg?url",
         imgSrc: BarbequeNation,
         alt: "Barbeque Nation"
     },
     {
-        route: "/src/assets/gallery/CashForGold.jpeg",
+        route: "/CashForGold.jpeg?url",
         imgSrc: CashForGold,
         alt: "Cash For Cold"
     },
     {
-        route: "/src/assets/gallery/shipping.jpeg",
+        route: "/shipping.jpeg?url",
         imgSrc: Shipping,
         alt: "Shipping Company"
     },
     {
-        route: "/src/assets/gallery/devOpticals.jpeg",
+        route: "/devOpticals.jpeg?url",
         imgSrc: DevOpticals,
         alt: "Dev Opticals"
     },
     {
-        route: "/src/assets/gallery/FitFushion.jpeg",
+        route: "/FitFushion.jpeg?url",
         imgSrc: FitFusion,
         alt: "Fit Fusion Gym"
     },
     {
-        route: "/src/assets/gallery/swadeshi.jpeg",
+        route: "/swadeshi.jpeg?url",
         imgSrc: Swadeshi,
         alt: "Swadeshi"
     },
     {
-        route: "/src/assets/gallery/3DWallpaper.jpeg",
+        route: "/3DWallpaper.jpeg?url",
         imgSrc: Wallpaper,
         alt: "3D Wallpaper"
     },
     {
-        route: "/src/assets/gallery/Vanguard.jpeg",
+        route: "/Vanguard.jpeg?url",
         imgSrc: Vanguard,
         alt: "Vanguard Diagnostics"
     },
     {
-        route: "/src/assets/gallery/wallpaper.jpeg",
+        route: "/wallpaper.jpeg?url",
         imgSrc: Wallpaper2D,
         alt: "2D Wallpaper"
     },
     {
-        route: "/src/assets/gallery/NitaraJewels.jpeg",
+        route: "/NitaraJewels.jpeg?url",
         imgSrc: Nitra,
         alt: "Nitara Jewels"
     },
     {
-        route: "/src/assets/gallery/MrChef.jpeg",
+        route: "/MrChef.jpeg?url",
         imgSrc: Mrchef,
         alt: "Mr Chef"
     },
     {
-        route: "/src/assets/gallery/Monk.jpeg",
+        route: "/Monk.jpeg?url",
         imgSrc: Monk,
         alt: "Monk"
     },
     {
-        route: "/src/assets/gallery/H2Rmusic.jpeg",
+        route: "/H2Rmusic.jpeg?url",
         imgSrc: H2R,
         alt: "H2R Music"
     },
