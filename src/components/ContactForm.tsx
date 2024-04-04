@@ -10,7 +10,7 @@ const ContactForm = () => {
     console.log("Form submitted");
   };
   return (
-    <div className="lg:h-screen bg-slate-600 flex items-centre w-full px-6">
+    <div className="lg:h-screen bg-slate-600 flex items-centre w-full px-6" id="contact">
       <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl mobile:rounded-xl p-4 md:p-8 shadow-input border-white border bg-black flex flex-col justify-around my-16 mobile:my-20">
         <h2 className="font-bold text-xl text-neutral-200">
           REACH OUT VIA THE FORM BELOW
