@@ -58,9 +58,9 @@ const Header: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="lg:flex md:flex hidden border border-white px-4 py-1 cursor-pointer">
+                {/* <div className="lg:flex md:flex hidden border border-white px-4 py-1 cursor-pointer">
                     <p className="flex justify-center items-center">CONTACT US</p>
-                </div>
+                </div> */}
                 <div>
                     {click && navBar}
                 </div>
