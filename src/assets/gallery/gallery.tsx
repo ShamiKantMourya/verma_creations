@@ -23,12 +23,12 @@ interface ImagesProps {
 
 export const Images: ImagesProps[] = [
     {
-        route: "assets/gallery/Oryn.jpeg",
+        route: "/Oryn.jpeg",
         imgSrc: Oryn,
         alt: "Oryn"
     },
     {
-        route: "assets/gallery/Animo.jpeg",
+        route: "/Animo.jpeg",
         imgSrc: Animo,
         alt: "Animo"
     },
