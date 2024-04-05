@@ -2,6 +2,7 @@ import React from "react";
 
 import { Input } from "./ui/Input";
 import { Label } from "./ui/Label";
+import { TextArea } from "./ui/TextArea";
 import { cn } from "../Utils/cn";
 
 const ContactForm = () => {
@@ -10,12 +11,12 @@ const ContactForm = () => {
     console.log("Form submitted");
   };
   return (
-    <div className="lg:h-screen bg-slate-600 flex items-centre w-full px-6" id="contact">
-      <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl mobile:rounded-xl p-4 md:p-8 shadow-input border-white border bg-black flex flex-col justify-around my-16 mobile:my-20">
+    <div className="lg:h-auto bg-slate-600 flex items-centre w-full px-6" id="contact">
+      <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl mobile:rounded-xl p-4 md:p-8 shadow-input border-white border bg-black flex flex-col justify-around my-8 mobile:my-20 h-auto">
         <h2 className="font-bold text-xl text-neutral-200">
           REACH OUT VIA THE FORM BELOW
         </h2>
-        <form className="my-8" onSubmit={handleSubmit} method="POST">
+        <form className="my-8 h-auto" onSubmit={handleSubmit} method="POST">
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
             <LabelInputContainer>
               <Label htmlFor="firstname">First name</Label>
@@ -36,7 +37,7 @@ const ContactForm = () => {
           </LabelInputContainer>
           <LabelInputContainer className="mb-4">
             <Label htmlFor="text" className="text-white">Write your thought</Label>
-            <Input placeholder="Why you want to contact" type="text"></Input>
+            <TextArea rows={4} cols={15} placeholder="Why you want to contact"></TextArea>
           </LabelInputContainer>
 
           <button
@@ -47,7 +48,7 @@ const ContactForm = () => {
             <BottomGradient />
           </button>
 
-          <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+          <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
         </form>
       </div>
     </div>
