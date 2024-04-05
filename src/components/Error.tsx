@@ -2,7 +2,7 @@ import React from 'react';
 import Lottie from 'react-lottie';
 import { Link } from "react-router-dom";
 
-import PageNotFound from "../assets/PageNotFound.json";
+import PageNotFound from "../assets/animation/PageNotFound.json";
 
 const Error: React.FC= () => {
     const defaultOptions = {
