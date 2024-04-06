@@ -19,6 +19,7 @@ export default {
       },
       screens: {
         'mobile': '320px',
+        'tab': '768px',
       },
       colors: {
         "matte-black": "#171717"
