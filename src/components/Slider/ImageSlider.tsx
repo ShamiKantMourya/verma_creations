@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-// import {Link} from "react-scroll";
 
 import { Carousel } from "./image-slider";
 import { images } from "./images";
 
 const ImageSlider = () => {
     return (
-        <Carousel className="lg:h-[40rem] mobile:h-[20rem]" images={images}>
+        <Carousel className="lg:h-[40rem] mobile:h-[20rem] tab:h-screen" images={images}>
             <motion.div
                 initial={{
                     opacity: 0,
@@ -21,11 +20,11 @@ const ImageSlider = () => {
                 }}
                 className="z-50 flex flex-col justify-center items-center mobile:h-80"
             >
-                <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+                <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
                     Signage Boards and 3D Wallpaper <br /> manufacturer
                 </motion.p>
-                <a href="#contact" className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-                    <span>Contact now →</span>
+                <a href="#contact" className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4 tab:h-16 tab:w-52">
+                    <span className="tab:text-2xl flex justify-center items-center">Contact now →</span>
                     <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
                 </a>
             </motion.div>

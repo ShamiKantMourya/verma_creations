@@ -142,7 +142,7 @@ export const Carousel = ({
             animate="visible"
             exit={direction === "up" ? "upExit" : "downExit"}
             variants={slideVariants}
-            className="image lg:h-full lg:w-full absolute lg:inset-0 object-cover object-center mobile:object-cover mobile:h-80 mobile:top-0"
+            className="image lg:h-full lg:w-full absolute lg:inset-0 object-cover object-center mobile:object-cover mobile:h-80 mobile:top-0 tab:w-full tab:h-screen"
           />
         </AnimatePresence>
       )}
