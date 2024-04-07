@@ -45,12 +45,12 @@ const Header: React.FC = () => {
             <div className="h-10vh flex lg:justify-between z-50 text-white py-5 lg:px-20 mobile:ml-8">
                 <div className="flex items-center flex-1">
                     <Link to="/">
-                        <img src={logo1} alt="logo" className="lg:w-20 lg:h-12 cursor-pointer moblie:w-8 mobile:h-8" />
+                        <img src={logo1} alt="logo" className="lg:w-20 lg:h-12 cursor-pointer moblie:w-8 mobile:h-8 tab:h-16 tab:w-20" />
                     </Link>
                 </div>
                 <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
                     <div className="flex-10">
-                        <ul className="flex gap-8 mr-16 text-[18px] cursor-pointer text-white">
+                        <ul className="flex gap-8 mr-16 text-[18px] cursor-pointer text-white tab:text-2xl">
                             <Link to="/" className="">Home</Link>
                             <Link to="/services" className="">Services</Link>
                             <Link to="/gallery" className="">Gallery</Link>
@@ -58,9 +58,6 @@ const Header: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-                {/* <div className="lg:flex md:flex hidden border border-white px-4 py-1 cursor-pointer">
-                    <p className="flex justify-center items-center">CONTACT US</p>
-                </div> */}
                 <div>
                     {click && navBar}
                 </div>
