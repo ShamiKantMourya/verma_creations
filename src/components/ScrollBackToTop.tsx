@@ -21,8 +21,8 @@ const ScrollBackToTop = () => {
     <div className="flex fixed bottom-8 right-8 z-20 cursor-pointer">
       {
         showScroll ? (
-          <div className="flex h-12 w-12 bg-red-600 text-white justify-center items-center rounded-3xl" onClick={goToTop}>
-            <FaArrowUp />
+          <div className="flex h-12 w-12 bg-red-600 text-white justify-center items-center rounded-3xl tab:h-16 tab:w-16 tab:rounded-full" onClick={goToTop}>
+            <FaArrowUp  className="tab:text-2xl"/>
           </div>
         ) : null
       }
