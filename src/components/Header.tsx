@@ -42,10 +42,10 @@ const Header: React.FC = () => {
     </>
     return (
         <nav className={navbarColor ? "backdrop-blur-sm h-20 fixed w-full z-10" : "transparent h-20 fixed w-full z-10"}>
-            <div className="h-10vh flex lg:justify-between z-50 text-white py-5 lg:px-20 mobile:ml-8">
+            <div className="h-10vh flex lg:justify-between z-50 text-white py-5 lg:px-20 mobile:ml-8 tab:ml-8">
                 <div className="flex items-center flex-1">
                     <Link to="/">
-                        <img src={logo1} alt="logo" className="lg:w-20 lg:h-12 cursor-pointer moblie:w-8 mobile:h-8 tab:h-16 tab:w-20" />
+                        <img src={logo1} alt="logo" className="cursor-pointer moblie:w-8 mobile:h-8 tab:h-16 tab:w-20 lg:h-16 lg:w-18" />
                     </Link>
                 </div>
                 <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
