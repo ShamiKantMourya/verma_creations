@@ -18,8 +18,10 @@ export default {
         '-1': '-1',
       },
       screens: {
-        'mobile': '320px',
-        'tab': '768px',
+        'mobile': {'min': '320px', 'max': '812px'},
+        // "ipad":{'min':'820', 'max': '1180'},
+        "tab": {'min':'768px', 'max':'1024px'},
+        "lg":{'min':'1200px', 'max':'1600px'}
       },
       colors: {
         "matte-black": "#171717"
