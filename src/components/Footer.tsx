@@ -11,12 +11,12 @@ const Footer: React.FC = () => {
     return (
         <footer>
             <div className="flex mobile:h-auto bg-gray-950 pt-5 justify-around lg:h-96 lg:flex-row mobile:flex-col tab:flex-col tab:pl-8">
-                <div className="mobile:ml-8 mt-3">
+                <div className="mobile:ml-8 mt-3 lap:ml-4">
                     <img src={logo1} alt="logo" className="cursor-pointer moblie:w-8 mobile:h-8 mb-2 lg:h-16 lg:w-18 tab:h-16 tab:w-20" />
-                    <p className="flex text-slate-50 mobile:text-xs py-1 tab:text-xl">
+                    <p className="flex text-slate-50 mobile:text-xs py-1 tab:text-xl ipad:text-2xl lap:text-base">
                         ©Copyrights 2024 Verma Creations
                     </p>
-                    <span className="flex text-slate-50 mobile:text-xs tab:text-xl">
+                    <span className="flex text-slate-50 mobile:text-xs tab:text-xl ipad:text-2xl lap:text-sm">
                         All rights reserved
                     </span>
                 </div>
@@ -55,8 +55,8 @@ const Footer: React.FC = () => {
                     </div>
                     <div className="flex text-slate-50 items-center mobile:ml-8 my-8 tab:text-2xl">
                         <IoLogoInstagram className="hover:text-red-500 cursor-pointer" />
-                        <FaXTwitter className="mobile:mx-3 cursor-pointer tab:mx-4" />
-                        <FaFacebookF className="hover:text-blue-700 cursor-pointer tab:mr-4" />
+                        <FaXTwitter className="mobile:mx-3 cursor-pointer tab:mx-4 lap:mx-4" />
+                        <FaFacebookF className="hover:text-blue-700 cursor-pointer tab:mr-4 lap:mr-4" />
                         <MdLocationPin className="mobile:ml-3 hover:text-red-800 cursor-pointer" />
                     </div>
                 </div>

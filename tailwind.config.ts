@@ -21,7 +21,7 @@ export default {
         'mobile': {'min': '320px', 'max': '812px'},
         "tab": {'min':'768px', 'max':'1024px'},
         "ipad":{'min':'1024px', 'max': '1366px'},
-        // "lg":{'min':'1200px', 'max':'1600px'}
+        "lap":{'min':'1200px', 'max':'1600px'}
       },
       colors: {
         "matte-black": "#171717"

@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     //         latitude = position.coords.latitude;
     //         longitude = position.coords.longitude;
     //     });
-        
+
     // }, []);
 
     const changeNavbarColor = () => {
@@ -45,12 +45,12 @@ const Header: React.FC = () => {
             <div className="h-10vh flex lg:justify-between z-50 text-white py-5 lg:px-20 mobile:ml-8 tab:ml-8">
                 <div className="flex items-center flex-1">
                     <Link to="/">
-                        <img src={logo1} alt="logo" className="cursor-pointer moblie:w-8 mobile:h-8 tab:h-16 tab:w-20 lg:h-16 lg:w-18" />
+                        <img src={logo1} alt="logo" className="cursor-pointer moblie:w-8 mobile:h-8 tab:h-16 tab:w-20 lap:h-16 lap:w-18" />
                     </Link>
                 </div>
                 <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
                     <div className="flex-10">
-                        <ul className="flex gap-8 mr-16 text-[18px] cursor-pointer text-white tab:text-2xl">
+                        <ul className="flex gap-8 mr-16 text-[18px] cursor-pointer text-white tab:text-2xl ipad:text-3xl lap:text-xl">
                             <Link to="/" className="">Home</Link>
                             <Link to="/services" className="">Services</Link>
                             <Link to="/gallery" className="">Gallery</Link>
@@ -58,6 +58,7 @@ const Header: React.FC = () => {
                         </ul>
                     </div>
                 </div>
+                <div className="ipad:hidden mobile:hidden tab:hidden lap:justify-center lap:items-center lap:flex"><h2 className="text-xl">Welcome👋</h2></div>
                 <div>
                     {click && navBar}
                 </div>
